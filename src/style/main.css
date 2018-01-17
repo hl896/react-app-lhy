@@ -12,7 +12,7 @@
     }
    
 
-    #showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
+    #sell_btn,#showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
         background-color: black;
     }
 
@@ -126,9 +126,10 @@
 
 
 @media screen and (min-width: 768px){
-    #showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
+    #sell_btn,#showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
         background-color: black;
     }
+    
 
     #homesection{
         top:66px;

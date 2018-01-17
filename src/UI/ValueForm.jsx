@@ -187,6 +187,41 @@ export default function ValueForm(props){
         
     }
 
+    function handleClickSell(e){
+        e.preventDefault();
+        var  val1;
+        var val3;
+        var val2;
+        
+        val2=document.getElementById("stack_mount").value;
+        val1=document.getElementById("search_stocks").value ;
+        
+        if(val1==''||val2==''||(isNaN(val2)||isNaN(val1) )){
+            alert('cannot be none, and Only number');
+        }else{
+            for (let indexbuy = 0; indexbuy < data.stacks.length; indexbuy++) {
+                if(val1==data.stacks[indexbuy].id){
+
+                    localStorage.setItem(data.stacks[indexbuy].amounts,JSON.stringify(val2));
+                    localStorage.setItem(data.stacks[indexbuy].stackname,JSON.stringify(data.stacks[indexbuy].stackname));
+                    //localStorage.setItem(data.stacks[indexbuy].totalPrice,(JSON.stringify(data.stacks[indexbuy].i_price)*JSON.stringify(val2)))
+                    var totalprice=(data.stacks[indexbuy].e_price)*( val2);
+                    document.getElementById('showystackssell').innerHTML=localStorage.getItem(data.stacks[indexbuy].stackname)+':'+localStorage.getItem(data.stacks[indexbuy].amounts)+"/price:"+totalprice;
+                    document.getElementById('showmy_e_funds').innerHTML=data.funds+totalprice;
+                    break;
+                }
+                else{
+                    document.getElementById('showmystacks').innerHTML=null;
+                }
+            }
+        }
+        
+            
+
+
+        
+    }
+
 
     return(
         
@@ -228,8 +263,10 @@ export default function ValueForm(props){
 
                         <input id='stack_mount' className='stack_mount' type='text' placeholder='stacks amount'/>
                         <button id='purchase_btn' type='button' onClick={handleClickBuy} >puchase amount</button>
-
+                        <button id='sell_btn' type='button' onClick={handleClickSell}>Sell Amount</button>
                         <br/>your puchased:<p id='showmystacks'></p>
+                        <br/>your selled:<p id='showystackssell'></p>
+
                         <br/>your funds left:<p id='showmy_e_funds'></p>
                     </div>
                 </div>
