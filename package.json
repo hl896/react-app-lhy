@@ -7,7 +7,6 @@
     "dev": "webpack-dev-server --history-api-fallback --progress --colors --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -27,10 +26,13 @@
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.5",
+    "edit-json-file": "^1.0.8",
     "gravatar-url": "^2.0.0",
+    "jsonfile": "^4.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-modal-dialog": "^4.0.7",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "write-json-file": "^2.3.0"
   }
 }

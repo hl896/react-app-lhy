@@ -1,0 +1,32 @@
+{
+    "name":"yang",
+    "i_funds":100,
+    "funds":"",
+    "stacks":[
+        {
+            "stackname":"s1",
+            "i_price":10,
+            "e_price":13
+        },
+        {
+            "stackname":"s2",
+            "i_price":5,
+            "e_price":7
+        },
+        {
+            "stackname":"s3",
+            "i_price":3,
+            "e_price":4
+        },
+        {
+            "stackname":"s4",
+            "i_price":11,
+            "e_price":12
+        }
+    
+    
+    ]
+
+
+
+}

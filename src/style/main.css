@@ -1,0 +1,304 @@
+.my-photo{
+    width: 200px;
+    
+    
+}
+@media screen and (max-width:767px){
+
+    #mytitle {
+        color: #ffffff;
+        
+        
+    }
+   
+
+    #showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
+        background-color: black;
+    }
+
+    #homesection{
+        top:66px;
+
+        height: 100vh;
+    }
+    #mynav_bar{
+        height: 100%;
+        max-width: 300px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top:20%;
+        right:0;
+        background-color: rgba(46, 202, 127, 0.85);
+        overflow-x:hidden;
+        
+        padding-top: 60px;
+        
+
+    }
+    .my_default{
+        background-color: #2eca7f;
+    }
+    
+    .navbar-brand:hover{
+        color: white;
+    }
+
+    #mynav_bar a{
+        position: relative;
+        padding:10px 8px 50px 30px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: .3s;
+        background-color: #2eca7f;
+        text-align: center;
+
+    }
+    #mynav_bar a:hover{
+        color: #ffffff;
+    }
+
+    #mynav_bar:checked ~ .mymenu{
+        width: 300px;
+        
+        
+    }
+
+    #ValueForm{
+        background-image: url(http://106.185.55.185:9006/wp-content/uploads/2016/03/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        min-height: 100vh;  
+    }
+    .my_container{
+        width: inherit;
+        height: inherit;
+
+        
+    }
+
+    .first_topic_line_center{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+    }
+
+
+    .four_box{
+        
+        min-height: 50%;
+        
+        margin:10%;
+        border:1px aliceblue solid;
+    }
+    .box_item{
+        margin: 10%;
+        min-height: 20%;
+        border: 1px red solid;
+    }
+
+    .up_box{
+        color: white;
+        text-align: center;
+        font-size: 4em
+    }
+    .middle_box{
+        color: white;
+        text-align: center;
+        font-size: 4em
+    }
+    .low_box{
+        color: white;
+        text-align: center;
+        font-size: 2em
+    }
+    
+   
+}
+
+
+
+@media screen and (min-width: 768px){
+    #showmystacks,#fundsmount, #deposit, #cashout, #search_stocks, #search_btn, #showboard, #stack_mount,#purchase_btn{
+        background-color: black;
+    }
+
+    #homesection{
+        top:66px;
+
+        height: 100vh;
+    }
+    .my-photo{
+        margin-bottom: -50px;
+    }
+    .card-body-detail{
+        padding-top: 50px;
+    }
+    
+    .container-fluid{
+        max-width: 1000px;
+    }
+    .mymenu{
+        position: relative;
+        background-color: #ffffff;
+        left: 0;
+        
+        min-width: 300px;
+        max-height:66px;
+        
+        
+    }
+    .my_default{
+        background-color: #ffffff;
+    }
+
+    #mynav_bar a:hover{
+        color: #2eca7f;
+    }
+    
+    .my_container{
+        background-image: url(http://106.185.55.185:9006/wp-content/uploads/2016/03/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 100vh;
+    }
+
+
+    #ValueForm{
+        background-image: url(http://106.185.55.185:9006/wp-content/uploads/2016/03/1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        min-height: 100vh;  
+    }
+    .my_container{
+        width: inherit;
+        height: inherit;
+
+        
+    }
+
+    .first_topic_line_center{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        color: aliceblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+    }
+
+
+    .four_box{
+        
+        min-height: 50%;
+        
+        margin:10%;
+        border:1px aliceblue solid;
+    }
+    .box_item{
+        margin: 10%;
+        min-height: 20%;
+        border: 1px red solid;
+    }
+
+    .up_box{
+        color: white;
+        text-align: center;
+        font-size: 4em
+    }
+    .middle_box{
+        color: white;
+        text-align: center;
+        font-size: 4em
+    }
+    .low_box{
+        color: white;
+        text-align: center;
+        font-size: 2em
+    }
+    
+}
+
+
+body{
+    max-width: 1000px;
+    margin: 0 auto ;
+}
+#app{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(46, 202, 127, 0.85);
+    top:0%;
+    z-index: 1;
+}
+header{
+    
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    z-index: 1;
+}
+
+.my-links{
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    color: gray;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.mycard{
+    margin-top: 10%;
+    background-color:#2eca7f;
+   
+}
+
+.my-photo{
+    
+    clear: both;
+    display: block;
+    margin: auto;
+    
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    height: -50px;
+    color:#000000;
+}
+/*
+#collapse-open >li> a:hover{
+    color: hsl(64, 82%, 67%);
+}*/
+
+.my_default{
+    
+    height: 67px;
+}
+.myheader{
+    width: 50%;
+    max-width: 300px;
+    
+}
+
+#mytitle{
+    color: #000000;
+}
